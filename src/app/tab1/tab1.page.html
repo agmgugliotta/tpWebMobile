@@ -13,5 +13,7 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <input style="color: black" [(ngModel)]="name"/>
+  <input style="color: blue" [(ngModel)]="name"/>
+  <app-explore-container [name]="name" (myOutput)="name = $event"></app-explore-container>
 </ion-content>
